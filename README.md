@@ -1,4 +1,4 @@
 # BetterData
 A datastore system for roblox.
 
-Not done, should be used yet. API coming soon.
+Not done, shouldnt be used yet. API coming soon.
