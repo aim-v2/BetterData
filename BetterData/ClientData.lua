@@ -35,18 +35,15 @@ end
 
 function ClientData:WaitFor(Key: string)
 	local KeyInCache = self.Cache[Key]
-	local TimeOut = 180
+	local TimeOut = 15
 
 	-- In case the key is already in the cache
 	if KeyInCache then
 		return KeyInCache
 	end
 
-	while not KeyInCache and TimeOut > 0 do
-		TimeOut =- 1
-		wait(0.01)
-	end
-
+	repeat wait(1) until self.Cache[Key] or TimeOut < 15
+	
 	return self.Cache[Key]
 end
 
