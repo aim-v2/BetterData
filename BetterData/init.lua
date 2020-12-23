@@ -72,7 +72,7 @@ function BetterData.Load(Player: Player, Dictionary: Dictionary) --> Class
 		RET_Set(PlayerData, "__table", Dictionary)
 	end
 	
-	return BetterData.Call(Player, {Key = "__table", Value = Dictionary})
+	return BetterData.Acquire(Player, {Key = "__table", Value = Dictionary})
 end
 
 
@@ -130,7 +130,7 @@ end
 
 
 -- Class Methods
-function BetterData.Call(Player: Player, DataTable: Dictionary) --> Class
+function BetterData.Acquire(Player: Player, DataTable: Dictionary) --> Class
     --> This method does a lot of things that could somehow lower performance if called 
     --> several times, so i did something to prevent that, take a look:
 
