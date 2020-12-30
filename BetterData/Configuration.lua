@@ -1,6 +1,6 @@
 return {
 	ExternalDatabase = {
-		Token = "https://teste-deac1-default-rtdb.firebaseio.com/", -- Do not put .json in the end.
+		Token = "", -- Do not put .json in the end.
 		Retries = 5
 	},
 
